@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\user\Desktop\Софтинушка\mails\mailbox@reg\Mailbox@Reg.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA27747E-2123-47B8-8188-29AB0DB2ABB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Mailbox@Reg</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.74.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>MailRegUnicore</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_DataArrival_ID0.cs" />
+    <Compile Include="_DataArrival_ID1.cs" />
+    <Compile Include="_DataArrival_ID2.cs" />
+    <Compile Include="AntiCaptchaNET.cs" />
+    <Compile Include="POP3.cs" />
+    <Compile Include="POP3Exception.cs" />
+    <Compile Include="my_eMail.cs" />
+    <Compile Include="md_MailFunctions.cs" />
+    <Compile Include="SocketNET.cs" />
+    <Compile Include="myCookies.cs" />
+    <Compile Include="mySocketConnectedCounter.cs" />
+    <Compile Include="myIsBusyCounter.cs" />
+    <Compile Include="myProxy.cs" />
+    <Compile Include="ProtocolProxy.cs" />
+    <Compile Include="SocketTimer.cs" />
+    <Compile Include="km_ru.cs" />
+    <Compile Include="_net__check_mail.cs" />
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenBlank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessafeQIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewCaptchaMailRU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_FUNCTION.cs" />
+    <Compile Include="_INI.cs" />
+    <Compile Include="_LOADSAVE.cs" />
+    <Compile Include="_LV.cs" />
+    <Compile Include="_VARIABLES.cs" />
+    <Compile Include="md_HttpLoadProxy.cs" />
+    <Compile Include="md_MySQL.cs" />
+    <Compile Include="md_NetworkReboot.cs" />
+    <Compile Include="mdConnect.cs" />
+    <Compile Include="mdConnect_Old.cs" />
+    <Compile Include="mdDebug.cs" />
+    <Compile Include="mdGenWORD.cs" />
+    <Compile Include="Sort.cs" />
+    <Compile Include="frmMain_RasDialex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAS_Variable.cs" />
+    <Compile Include="RasDialUC.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\MySettings.cs" />
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="Examples\System\Net\SslTcpClient.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx" />
+    <EmbeddedResource Include="frmGenBlank.resx" />
+    <EmbeddedResource Include="frmMain.resx" />
+    <EmbeddedResource Include="frmMain_RasDialex.resx" />
+    <EmbeddedResource Include="frmMessafeQIP.resx" />
+    <EmbeddedResource Include="frmNewCaptchaMailRU.resx" />
+    <EmbeddedResource Include="frmOptions.resx" />
+    <EmbeddedResource Include="frmSQL.resx" />
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
